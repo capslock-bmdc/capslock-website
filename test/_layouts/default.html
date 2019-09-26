@@ -1,0 +1,43 @@
+---
+layout: def.css
+---
+
+<!DOCTYPE html>
+
+<head>
+    <style>
+        .navbar{
+
+            position: absolute;
+            height: 10%;
+            background-color: #10cfc8;
+        }
+
+        .logo{
+        background-color: black;
+        color: red;
+        }
+    </style> 
+    <meta charset="utf-8">
+    <title>{{ layout.title }}</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="desg">
+                <div class="logo"><p>c</p></div> 
+                <div class="buttons"></div>
+                <div class="search"></div> 
+            </div>
+        </div>
+        <div class="content">
+            {{content}}
+        </div>
+        <div class="footer">
+            <div class="contact info">
+
+            </div>
+        </div>
+    </div>
+</body>
