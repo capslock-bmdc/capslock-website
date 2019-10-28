@@ -1,27 +1,26 @@
 /**
  * Site header
- */
+*/
 
 .site-header {
-  border-top: 5px solid $Green;
-  border-bottom: 1px solid $Green;
-  padding-left: -5s5px;
-  background-color: $Green;
-  min-height: $spacing-unit * 1.865;
-
+  background-image: radial-gradient($Green,$darkGreen,$black);
+  height: 100vh;
+  width: 100vw;
   // Positioning context for the mobile navigation icon
   position: relative;
 }
- .logo{
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  left: 10px;
+.Wrap{
+  //@include  linear gradient
+  text-align: center;
+  height: auto;
 }
-.titl{
-  height: 50px;
-  left: 60px;
-  position: absolute;
+.hacker{
+  margin: 25vh;
+  height: 50vh;
+  //centering the pic
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .site-title {
   @include relative-font-size(1.625);
@@ -76,7 +75,6 @@
       z-index: 2;
       cursor: pointer;
     }
-
     .menu-icon {
       display: block;
       float: right;
@@ -118,10 +116,16 @@
 /**
  * Site footer
  */
+
+
 .site-footer {
   border-top: 1px solid $grey-color-dark;
   padding: $spacing-unit 0;
   background-color: $black;
+  bottom: 0;
+  position: relative;
+  float: bottom;
+  width: 100%;
 }
 
 .footer-heading {
@@ -192,7 +196,7 @@
 .page-content {
   padding: $spacing-unit 0;
   flex: 1;
-}
+
 
 .page-heading {
   @include relative-font-size(2);
@@ -205,10 +209,28 @@
 .post-list {
   margin-left: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows:400px 400px;
+  grid-column-gap: 60px;
+  grid-row-gap: 60px;
+  justify-items: stretch ;
 
-  > li {
-    margin-bottom: $spacing-unit;
-  }
+  width: 100%;
+}
+   .card {
+    //post card
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      border-radius: 5px; /* 5px rounded corners */
+      background-color: #DfDfDf;
+      min-width: 100px;// so it doesnt get to small
+
+
+    &:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      background-color: $fried;
+    }
 }
 
 .post-meta {
@@ -220,7 +242,7 @@
   display: block;
   @include relative-font-size(1.5);
 }
-
+}
 
 
 /**
