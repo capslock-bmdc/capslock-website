@@ -2,7 +2,7 @@
 layout: post
 title: "hart"
 date: 2019-10-06  19:39:25 +0300
-discription: bjbdjsdbcj
+description: bjbdjsdbcj
 ---
 ghefgffbvk
 dfigdfsjlvfsjhvbsdfv

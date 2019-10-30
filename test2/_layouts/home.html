@@ -25,9 +25,9 @@ layout: default
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
-          <h1>{%- if post.description==true -%}
+          <h1>:
             {{ post.description }}
-          {%- endif -%}</h1>
+          </h1>
         </h3>
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
@@ -36,7 +36,7 @@ layout: default
       {%- endfor -%}
     </div>
 
-    <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> --!>
+    <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
   {%- endif -%}
 </div>
 </main>
