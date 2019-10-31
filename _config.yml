@@ -22,8 +22,8 @@ title: i'm batman and i know it
 email: yechielsul@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   im just changing things because i want to, and im not really being productive
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://capslock-bmdc.github.io/capslock-website/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/capslock-website" # the subpath of your site, e.g. /blog
+url: "https://capslock-bmdc.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: donthave_1
 github_username:  sulzy3
 
