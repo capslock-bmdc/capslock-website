@@ -18,14 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: i'm batman and i know it
+title: offical capslock Website
 email: yechielsul@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  im just changing things because i want to, and im not really being productive
+  Capslock is a movement to help improve the coding level of students of BMDC
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: donthave_1
-github_username:  sulzy3
+github_username:  capslock-WebSite
 
 # Build settings
 theme: minima

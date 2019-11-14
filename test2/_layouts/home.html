@@ -3,13 +3,10 @@ layout: default
 ---
 
 <!--- creating a rondom number--->
-{% assign min = 1 %}
-{% assign max = 3 %}
-{% assign diff = max | minus: min %}
-{% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
 
 {%- include header.html -%}
-  <main class="page-content" aria-label="Content">
+  <main class="page-content" aria-label="Content" onload="setTimeout(animation, 1000)">
+<!-- i need to get the animation working --> 
     <div class="wrapper">
       {{ content }}
 
@@ -26,7 +23,7 @@ layout: default
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
-          
+
             {{ post.description }}<!--need to add a limter-->>
 
         </h3>
@@ -41,5 +38,3 @@ layout: default
   {%- endif -%}
 </div>
 </main>
-
-</div>

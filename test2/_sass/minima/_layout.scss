@@ -6,9 +6,10 @@
   background-image: radial-gradient($Green,$darkGreen,$black);
   height: 100vh;
   width: 100vw;
-  // Positioning context for the mobile navigation icon
   position: relative;
-}
+  transition-duration: 2s;
+  transition-timing-function: linear;}
+ 
 .Wrap{
   //@include  linear gradient
   text-align: center;
@@ -22,6 +23,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+
 }
 .site-title {
   @include relative-font-size(1.625);
@@ -125,7 +127,6 @@
   background-color: $black;
   bottom: 0;
   position: relative;
-  float: bottom;
   width: 100%;
 }
 
