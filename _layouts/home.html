@@ -14,7 +14,7 @@ layout: default
         <a class="post-link" href="{{ post.url | relative_url }}">
           <h1>{{ post.title }}</h1>
           <h4>{{ post.description }}</h4>
-          <img src="{{post.thumbnail}}" />
+          <img src="{{ site.baseurl }}{{post.thumbnail}}" />
         </a>
       </div>
       {%- endfor -%}
