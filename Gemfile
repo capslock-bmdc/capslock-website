@@ -1,13 +1,13 @@
 source "https://rubygems.org"
 
 # --- for local dev
-gem "jekyll", "~> 4.0.0"
+# gem "jekyll", "~> 4.0.0"
 # ---
 
 gem "minima", "~> 2.5"
 
 # --- for github-pages
-# gem "github-pages", group: :jekyll_plugins
+gem "github-pages", group: :jekyll_plugins
 # ---
 
 group :jekyll_plugins do
