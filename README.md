@@ -9,4 +9,4 @@
 - clone the repo
 - `cd` into the repo
 - run in the cmd `bundle install`
-- run `bundle exec jekyll serve`
+- run `bundle exec jekyll serve --config _config_dev.yml`

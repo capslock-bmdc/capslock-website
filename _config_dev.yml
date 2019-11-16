@@ -22,13 +22,12 @@ title: i'm batman and i know it
 email: yechielsul@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   im just changing things because i want to, and im not really being productive
-baseurl: "/capslock-website" # the subpath of your site, e.g. /blog
-url: "https://capslock-bmdc.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: donthave_1
 github_username:  sulzy3
 
 # Build settings
-environment: production
 theme: minima
 plugins:
   - jekyll-feed
