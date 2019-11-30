@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-im really bad at programing ;-(
+Capslock is a movement to help improve the coding level of students of BMDC
