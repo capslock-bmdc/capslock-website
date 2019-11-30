@@ -1,0 +1,28 @@
+{% for node in sorted_pages %}
+  {% capture fullurl %}{{ site.baseurl }}{{ node.url }}{% endcapture %}
+  {% if fullurl == page.url %}
+    {% assign current_page = fullurl %}
+    {% break %}
+  {% elsif page.url contains fullurl %}
+    {% assign current_page = fullurl %}
+  {% endif %}
+{% endfor %}
+
+<nav>
+  <ul>
+    {% assign sorted_pages = site.pages | sort:"order" %}
+    {%- for page in sorted_pages -%}
+    {% if page.nav-title != null %}
+    <li>
+      <a href="{{ page.url | relative_url }}">
+        <h1>{{ page.nav-title }}</h1>
+        <div>{{page.url}}</div>
+        {% if page.url == current_page %}
+        <div>{{current_page}} is selected</div>
+        {%- endif -%}
+      </a>
+    </li>
+    {%- endif -%}
+    {%- endfor -%}
+  </ul>
+</nav>

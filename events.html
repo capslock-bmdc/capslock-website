@@ -1,12 +1,12 @@
 ---
 layout: default
+title: CAPSLOCK | Events
+nav-title: Events
+url: /events
+order: 2
 ---
-{%- include header.html -%}
 <main class="page-content" aria-label="Content">
   <div class="wrapper">
-    {{ content }}
-
-
     {%- if site.posts.size > 0 -%}
     <div class="post-list">
       {%- for post in site.posts -%}
@@ -19,10 +19,6 @@ layout: default
       </div>
       {%- endfor -%}
     </div>
-
-    <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> --!>
-  {%- endif -%}
-</div>
+    {%- endif -%}
+  </div>
 </main>
-
-</div>
