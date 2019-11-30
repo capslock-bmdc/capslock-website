@@ -1,0 +1,71 @@
+---
+
+---
+
+<!DOCTYPE html>
+
+<head>
+    <style>
+        body{
+            margin: 0%;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .navbar_wraper{
+            height: 50px;
+        }
+        .container{
+            width: 100%;
+            height: 50px;
+        }
+        .navbar{
+            position: fixed;
+            width: 100%;
+            height:50px;
+            left: 0px;
+            top: 0px;
+            background-color: #10cfc8;
+        }
+
+        .logo{
+            width: 50px;
+            height: 100%;
+        }
+        .content{
+            flex: 1 0 auto;
+            padding: 20px;
+        }
+        footer {
+            flex-shrink: 0;
+            padding: 20 px;
+            background-color: lightgrey;
+
+        }
+    </style> 
+    <meta charset="utf-8">
+    <title>{{ layout.title }}</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar_wraper"></div>
+        <div class="navbar">
+            <div class="desg"></div>
+                <img class="logo" src="../assets/images/logo.png" alt="logo">
+                
+                <div class="buttons"></div>
+                <div class="search"></div> 
+            </div>
+        </div>
+        <div class="content">
+            {{content}}
+        </div>
+        <footer>
+                <p>Posted by: yechiel sulzbacher</p>
+                <p>Contact information: 
+                 <a href="mailto:someone@example.com"> someone@example.com</a>.
+                </p>
+        </footer>
+    </div>
+</body>
