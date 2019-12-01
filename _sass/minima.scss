@@ -3,17 +3,11 @@
 @import "abstracts/variables";
 
 @import "components/navbar";
+@import "components/header";
 
 // Define defaults for each variable.
 
-@font-face {
-  font-family: "CAPSLOCK";
-  src: url("../assets/fonts/CAPSLOCK.ttf");
-}
 
-$base-font-family: "CAPSLOCK", BlinkMacSystemFont, "Segoe UI", Roboto,
-  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol" !default;
 $base-font-size: 16px !default;
 $base-font-weight: 400 !default;
 $small-font-size: $base-font-size * 0.875 !default;

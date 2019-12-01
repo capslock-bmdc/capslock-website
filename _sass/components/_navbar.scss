@@ -27,6 +27,7 @@
       text-align: center;
       margin: 16px 24px;
       text-decoration: none;
+      font-family: $brand-font-family, sans-serif;
 
       &.active {
         border-bottom: 3px solid;

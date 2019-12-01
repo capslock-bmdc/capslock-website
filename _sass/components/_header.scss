@@ -1,0 +1,9 @@
+.header {
+  box-sizing: border-box;
+  background-color: $red;
+  height: 90vh;
+  &__text {
+    margin: 20vh;
+    color: $white;
+  }
+}
