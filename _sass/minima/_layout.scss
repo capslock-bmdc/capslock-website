@@ -3,8 +3,10 @@
 */
 
 .site-header {
-  background-image: radial-gradient($Green, $darkGreen, $black);
-  height: 100vh;
+  box-sizing: border-box;
+  padding: 10% 25%;
+  background-color: $red;
+  height: 90vh;
   // Positioning context for the mobile navigation icon
   position: relative;
 }
@@ -14,13 +16,12 @@
   height: auto;
 }
 .hacker {
-  margin: 25vh;
+  // margin: 25vh;
   height: 50vh;
-  //centering the pic
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
+
 .site-title {
   @include relative-font-size(1.625);
   font-weight: 300;
