@@ -1,5 +1,8 @@
 images:
-  -image: "/assets/images/thumbnails/hackathon-june-2019.jpg"
-  -image: "/assets/images/thumbnails/hackathon-june-2019.jpg"
-  -image: "/assets/images/thumbnails/hackathon-june-2019.jpg"
-  -image: "/assets/images/thumbnails/hackathon-june-2019.jpg"
+  - image: /assets/images/home/carousel/1.JPG
+  - image: /assets/images/home/carousel/2.JPG
+  - image: /assets/images/home/carousel/3.JPG
+  - image: /assets/images/home/carousel/4.JPG
+  - image: /assets/images/home/carousel/5.JPG
+  - image: /assets/images/home/carousel/6.JPG
+  - image: /assets/images/home/carousel/7.JPG
