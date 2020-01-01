@@ -1,9 +1,11 @@
 @charset "utf-8";
 
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
 @import "components/navbar";
 @import "components/carousel";
+@import "components/features";
 
 // Define defaults for each variable.
 

@@ -4,7 +4,7 @@
 }
 
 .slideshow__image {
-  height: 100%;
+  height: calc(100vh - 80px);
   width: 100%;
   position: absolute;
   background-size: cover;
