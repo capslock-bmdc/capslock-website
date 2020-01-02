@@ -1,0 +1,16 @@
+.quote {
+  width: 800px;
+  margin: 48px auto 0 auto;
+  padding: 92px;
+  position: relative;
+  font-style: italic;
+  &:before {
+      content: '\201C';
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: $green;
+      font-size: 300px;
+      z-index: -1;
+   }
+}
