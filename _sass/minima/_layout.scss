@@ -181,64 +181,17 @@
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
+  padding: 60px;
   flex: 1;
 
   .page-heading {
     @include relative-font-size(2);
   }
-
-  .post-list-heading {
-    @include relative-font-size(1.75);
-  }
-
-  .post-list {
-    margin: 0 auto;
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 700px;
-    grid-column-gap: 60px;
-    grid-row-gap: 60px;
-    justify-items: stretch;
-    width: 1140px;
-  }
-  .card {
-    padding: 48px;
-    border: 8px solid $green;
-    cursor: pointer;
-    &:hover {
-      background-color: $green;
-      // box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-    }
-  }
-  
-  .card a {
-    position: relative;
-    text-decoration: none;
-    height: 100%;
-  }
-
-  .card a img {
-    position: absolute;
-    bottom: 24px;
-    width: 100%;
-  }
-
-  .post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-  }
-
-  .post-link {
-    display: block;
-    @include relative-font-size(1.5);
-  }
 }
 
 /**
- * Posts
- */
+* Posts
+*/
 
 .post {
   margin: $spacing-unit auto;
@@ -247,6 +200,11 @@
 
 .post-header {
   margin-bottom: $spacing-unit;
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
 }
 
 .post-title {
