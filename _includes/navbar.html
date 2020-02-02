@@ -1,12 +1,12 @@
-{% for node in sorted_pages %}
+<!-- {% for node in sorted_pages %} -->
 {% capture fullurl %}{{ site.baseurl }}{{ node.url }}{% endcapture %}
-{% if fullurl == page.url %}
+<!-- {% if fullurl == page.url %}
 {% assign current_page = fullurl %}
 {% break %}
 {% elsif page.url contains fullurl %}
 {% assign current_page = fullurl %}
 {% endif %}
-{% endfor %}
+{% endfor %} -->
 
 <div class="navbar">
   <a class="in-bar" href="{{ site.baseurl }}/index.html">
@@ -21,7 +21,7 @@
     <li class="nav__item">
       <a href="{{ page.url | relative_url }}"
         class="link {% if page.url == fullurl %}active{% endif %}">
-        {{ page.nav-title }}{{fullurl}}
+        {{ page.nav-title }}fullurl{{fullurl}}pageurl{{page.url}}
       </a>
     </li>
     {%- endif -%}
