@@ -1,4 +1,5 @@
-{% for node in site.pages %}
+{% assign sorted_pages = site.pages | sort:"order" %}
+{% for node in sorted_pages %}
   {% capture fullurl %}{{ site.baseurl }}{{ node.url }}{% endcapture %}
   {% if fullurl == page.url %}
     {% assign current_page = fullurl %}
@@ -6,7 +7,7 @@
   {% elsif node.url == page.url %}
     {% assign current_page = fullurl %}
   {% elsif fullurl contains page.url %}
-    {% assign current_page = fullurl %}
+    {% assign current_page = page.url %}
   {% endif %}
 {% endfor %}
 
@@ -17,13 +18,13 @@
       onmouseout="this.src='{{ site.baseurl }}/assets/images/icon/white.png'" />
   </a>
   <ul class="nav in-bar">
-    {% assign sorted_pages = site.pages | sort:"order" %}
     {%- for page in sorted_pages -%}
+    {% capture page_link %}{{ site.baseurl }}{{ page.url }}{% endcapture %}
     {% if page.nav-title != null %}
     <li class="nav__item">
       <a href="{{ page.url | relative_url }}"
-        class="link {% if fullurl == current_page %}active{% endif %}">
-        a {{ page.nav-title }} current_page {{current_page}} pageurl {{page.url}} baseUrl {{site.baseurl}} nodeUrl {{node.url}}
+        class="link {% if page_link == current_page %}active{% endif %}">
+        {{ page.nav-title }}
       </a>
     </li>
     {%- endif -%}
