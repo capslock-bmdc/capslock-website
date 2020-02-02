@@ -3,7 +3,9 @@
   {% if fullurl == page.url %}
     {% assign current_page = fullurl %}
     {% break %}
-  {% elsif page.url contains fullurl %}
+  {% elsif node.url == page.url %}
+    {% assign current_page = fullurl %}
+  {% elsif fullurl contains page.url %}
     {% assign current_page = fullurl %}
   {% endif %}
 {% endfor %}
