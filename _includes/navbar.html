@@ -20,8 +20,8 @@
     {% if page.nav-title != null %}
     <li class="nav__item">
       <a href="{{ page.url | relative_url }}"
-        class="link {% if (page.url == current_page) | ( relative_url == current_page ) %}active{% endif %}">
-        {{ page.nav-title }}
+        class="link {% if page.url == fullurl %}active{% endif %}">
+        {{ page.nav-title }}{{fullurl}}
       </a>
     </li>
     {%- endif -%}
