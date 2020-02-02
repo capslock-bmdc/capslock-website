@@ -10,19 +10,17 @@
 
 <div class="navbar">
   <a class="in-bar" href="{{ site.baseurl }}/index.html">
-    <img
-      class="navbar__icon"
-      src="{{ site.baseurl }}/assets/images/icon/white.png"
+    <img class="navbar__icon" src="{{ site.baseurl }}/assets/images/icon/white.png"
       onmouseover="this.src='{{ site.baseurl }}/assets/images/icon/black.png'"
-      onmouseout="this.src='{{ site.baseurl }}/assets/images/icon/white.png'"
-    />
+      onmouseout="this.src='{{ site.baseurl }}/assets/images/icon/white.png'" />
   </a>
   <ul class="nav in-bar">
     {% assign sorted_pages = site.pages | sort:"order" %}
     {%- for page in sorted_pages -%}
     {% if page.nav-title != null %}
     <li class="nav__item">
-      <a href="{{ page.url | relative_url }}" class="link {% if page.url == current_page %}active{% endif %}">
+      <a href="{{ page.url | relative_url }}"
+        class="link {% if (page.url == current_page) | ( relative_url == current_page ) %}active{% endif %}">
         {{ page.nav-title }}
       </a>
     </li>
