@@ -6,7 +6,7 @@
   {% elsif node.url == page.url %}
     {% assign current_page = fullurl %}
   {% elsif fullurl contains page.url %}
-    {% assign current_page = fullurl %}
+    {% assign current_page = page.url %}
   {% endif %}
 {% endfor %}
 
@@ -23,7 +23,7 @@
     <li class="nav__item">
       <a href="{{ page.url | relative_url }}"
         class="link {% if page.url == current_page %}active{% endif %}">
-        {{ page.nav-title }} current_page {{current_page}} pageurl {{page.url}} baseUrl {{site.baseurl}} nodeUrl {{node.url}}
+        a {{ page.nav-title }} current_page {{current_page}} pageurl {{page.url}} baseUrl {{site.baseurl}} nodeUrl {{node.url}}
       </a>
     </li>
     {%- endif -%}
