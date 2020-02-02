@@ -1,12 +1,12 @@
-<!-- {% for node in sorted_pages %} -->
-{% capture fullurl %}{{ site.baseurl }}{{ node.url }}{% endcapture %}
-<!-- {% if fullurl == page.url %}
-{% assign current_page = fullurl %}
-{% break %}
-{% elsif page.url contains fullurl %}
-{% assign current_page = fullurl %}
-{% endif %}
-{% endfor %} -->
+{% for node in sorted_pages %}
+  {% capture fullurl %}{{ site.baseurl }}{{ node.url }}{% endcapture %}
+  {% if fullurl == page.url %}
+    {% assign current_page = fullurl %}
+    {% break %}
+  {% elsif page.url contains fullurl %}
+    {% assign current_page = fullurl %}
+  {% endif %}
+{% endfor %}
 
 <div class="navbar">
   <a class="in-bar" href="{{ site.baseurl }}/index.html">
@@ -20,8 +20,8 @@
     {% if page.nav-title != null %}
     <li class="nav__item">
       <a href="{{ page.url | relative_url }}"
-        class="link {% if page.url == fullurl %}active{% endif %}">
-        {{ page.nav-title }}fullurl{{fullurl}}pageurl{{page.url}}
+        class="link {% if page.url == current_page %}active{% endif %}">
+        {{ page.nav-title }} current_page {{current_page}} pageurl {{page.url}} baseUrl {{site.baseurl}} nodeUrl {{node.url}}
       </a>
     </li>
     {%- endif -%}
