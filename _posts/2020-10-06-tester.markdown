@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Gamehack 2019"
-date: 2019-10-06  19:39:25 +0300
+date: 2018-10-06  19:39:25 +0300
 description: "a description"
 thumbnail: "/assets/images/thumbnails/gamehack-2019.jpg"
 ---

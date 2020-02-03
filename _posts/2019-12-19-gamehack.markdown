@@ -1,0 +1,43 @@
+---
+layout: post
+title: "GAMEHACK 2019"
+date: 2019-12-19 19:00:00 +0200
+description: "a description"
+thumbnail: "/assets/images/thumbnails/gamehack-2019.jpg"
+---
+
+{:refdef: style="text-align: center; "}
+![an image]({{site.baseurl}}/assets/images/posts/2019-12-19-gamehack/logo.png){: style="height: 200px; clear: center"}
+{: refdef}
+
+[GAMEHACK 2019](https://capslock-bmdc.github.io/gamehack-19/) was the second hackathon we hosted at Beit Medrash Derech Chaim, we planed for a fun challenge for the students but it quickly grow to a full scale hackathon. The hackathon was sponsored by the yeshiva and collage the students learn at - [Derech Chaim](https://www.derechaim.com/en/) and [Ashkelon Academic Collage](https://www.aac.ac.il/).
+
+{:refdef: style="text-align: center; "}
+![an image]({{site.baseurl}}/assets/images/posts/2019-12-19-gamehack/DSC_0267.JPG){: style="height: 300px; clear: center"}
+{: refdef}
+
+The name doesn't leave any doubts about the main theme - games. Game themed hackathons are always fun and entertaining, we decided to give away more information about the challange (thier games needed to be multiplayer retro games) about two weeks before the hackathon to let the groups have time to brainstorm, the groups come up we all different kinds of technology solutions.
+
+On the night of the hackathon around 50 participant showed up, and after some words of encouragement form Prof. Domb, head of CS in the collage, everyone was off and coding away, every team used different technologies to tackle the problems they were facing, Java, Python, Sockets, Unreal, APIs, Flutter, Arduino and more. Mr. Martzino Mr. Liber and __, ___ where around to help the students develop the most retro games!.
+
+One of the participants, Nani, created a game that no own can resist playing at 2am - a multiplayer-bear-controlled-packman, and it is exactlly waht it is called. It was indeed a refreshing break in the middle of the gamehack!
+
+{:refdef: style="text-align: center; "}
+![an image]({{site.baseurl}}/assets/images/posts/2019-12-19-gamehack/page-3.png){: style="height: 200px; clear: center"}
+![an image]({{site.baseurl}}/assets/images/posts/2019-12-19-gamehack/page-2.png){: style="height: 200px; clear: center"}
+![an image]({{site.baseurl}}/assets/images/posts/2019-12-19-gamehack/page-1.png){: style="height: 200px; clear: center"}
+{: refdef}
+
+Closer to the end of the hackathon we were able to feel the tension in the air, all team were running behind it the scedule (does it have to do with the multiplayer-bear-controlled-packman?), they were fixing bugs, doing testing and polishing their games.
+
+At 06:00 the clock stoped and the judging session started, all teams presented a slideshow with lots of details on their development process alog side a live demo of their game! This was defnetlly one of the best moments of the hackathon. All teams made encredible games, the 'K300' team made a multiplayer robot on wheels game with an app that is used to control it! The winning team built a multiplayer snake game with hidden easter eggs.
+
+Overall the gamehack was lots of fun, and we can't waite to host the next one.
+
+Want more information about the hackathon? visit the [gamehack website](https://capslock-bmdc.github.io/gamehack-19/) and the [gamehack guide for attendees](https://www.notion.so/capslockbmdc/GAMEHACK-2019-Public-d2c356aced5f4a6b867d7bdadf636fbb).
+
+{:refdef: style="text-align: center; "}
+![an image]({{site.baseurl}}/assets/images/posts/2019-12-19-gamehack/DSC_0226.JPG){: style="height: 150px; clear: center"}
+![an image]({{site.baseurl}}/assets/images/posts/2019-12-19-gamehack/DSC_0271.JPG){: style="height: 150px; clear: center"}
+![an image]({{site.baseurl}}/assets/images/posts/2019-12-19-gamehack/DSC_0253.JPG){: style="height: 150px; clear: center"}
+{: refdef}
