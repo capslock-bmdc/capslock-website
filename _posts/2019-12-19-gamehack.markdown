@@ -18,14 +18,14 @@ thumbnail: "/assets/images/thumbnails/gamehack-2019.jpg"
 
 The name doesn't leave any doubts about the main theme - games. Game themed hackathons are always fun and entertaining, we decided to give away more information about the challange (thier games needed to be multiplayer retro games) about two weeks before the hackathon to let the groups have time to brainstorm, the groups come up we all different kinds of technology solutions.
 
-On the night of the hackathon around 50 participant showed up, and after some words of encouragement form Prof. Domb, head of CS in the collage, everyone was off and coding away, every team used different technologies to tackle the problems they were facing, Java, Python, Sockets, Unreal, APIs, Flutter, Arduino and more. Mr. Martzino Mr. Liber and __, ___ where around to help the students develop the most retro games!.
+On the night of the hackathon around 50 participant showed up, and after some words of encouragement form Prof. Domb, head of CS in the collage, everyone was off and coding away, every team used different technologies to tackle the problems they were facing, Java, Python, Sockets, Unreal, APIs, Flutter, Arduino and more. Zvika Martzino, Rami Liber and Doron Amir where around to help the students develop the most retro styled games!.
 
 One of the participants, Nani, created a game that no own can resist playing at 2am - a multiplayer-bear-controlled-packman, and it is exactlly waht it is called. It was indeed a refreshing break in the middle of the gamehack!
 
 {:refdef: style="text-align: center; "}
-![an image]({{site.baseurl}}/assets/images/posts/2019-12-19-gamehack/page-3.png){: style="height: 200px; clear: center"}
-![an image]({{site.baseurl}}/assets/images/posts/2019-12-19-gamehack/page-2.png){: style="height: 200px; clear: center"}
-![an image]({{site.baseurl}}/assets/images/posts/2019-12-19-gamehack/page-1.png){: style="height: 200px; clear: center"}
+![an image]({{site.baseurl}}/assets/images/posts/2019-12-19-gamehack/page-3.jpg){: style="height: 200px; clear: center"}
+![an image]({{site.baseurl}}/assets/images/posts/2019-12-19-gamehack/page-2.jpg){: style="height: 200px; clear: center"}
+![an image]({{site.baseurl}}/assets/images/posts/2019-12-19-gamehack/page-1.jpg){: style="height: 200px; clear: center"}
 {: refdef}
 
 Closer to the end of the hackathon we were able to feel the tension in the air, all team were running behind it the scedule (does it have to do with the multiplayer-bear-controlled-packman?), they were fixing bugs, doing testing and polishing their games.
