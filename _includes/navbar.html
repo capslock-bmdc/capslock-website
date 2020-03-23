@@ -1,28 +1,29 @@
+{% assign sorted_pages = site.pages | sort:"order" %}
 {% for node in sorted_pages %}
-{% capture fullurl %}{{ site.baseurl }}{{ node.url }}{% endcapture %}
-{% if fullurl == page.url %}
-{% assign current_page = fullurl %}
-{% break %}
-{% elsif page.url contains fullurl %}
-{% assign current_page = fullurl %}
-{% endif %}
+  {% capture fullurl %}{{ site.baseurl }}{{ node.url }}{% endcapture %}
+  {% if fullurl == page.url %}
+    {% assign current_page = fullurl %}
+    {% break %}
+  {% elsif node.url == page.url %}
+    {% assign current_page = fullurl %}
+  {% elsif fullurl contains page.url %}
+    {% assign current_page = page.url %}
+  {% endif %}
 {% endfor %}
 
 <div class="navbar">
   <a class="in-bar" href="{{ site.baseurl }}/index.html">
-    <img
-      class="navbar__icon"
-      src="{{ site.baseurl }}/assets/images/icon/white.png"
+    <img class="navbar__icon" src="{{ site.baseurl }}/assets/images/icon/white.png"
       onmouseover="this.src='{{ site.baseurl }}/assets/images/icon/black.png'"
-      onmouseout="this.src='{{ site.baseurl }}/assets/images/icon/white.png'"
-    />
+      onmouseout="this.src='{{ site.baseurl }}/assets/images/icon/white.png'" />
   </a>
   <ul class="nav in-bar">
-    {% assign sorted_pages = site.pages | sort:"order" %}
     {%- for page in sorted_pages -%}
+    {% capture page_link %}{{ site.baseurl }}{{ page.url }}{% endcapture %}
     {% if page.nav-title != null %}
     <li class="nav__item">
-      <a href="{{ page.url | relative_url }}" class="link {% if page.url == current_page %}active{% endif %}">
+      <a href="{{ page.url | relative_url }}"
+        class="link {% if page_link == current_page %}active{% endif %}">
         {{ page.nav-title }}
       </a>
     </li>

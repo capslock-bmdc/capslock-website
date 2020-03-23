@@ -1,0 +1,45 @@
+.post-list {
+  margin: 0 auto;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 400px;
+  grid-column-gap: 60px;
+  grid-row-gap: 60px;
+  justify-items: stretch;
+  width: 1140px;
+}
+
+.post-card {
+  transition: 0.5s all;
+
+  &__content {
+    h2 {
+      margin: 12px 0 0 0;
+    }
+    h4 {
+      margin: 0;
+    }
+  }
+  &__image {
+    width: 100%;
+    img {
+      border-radius: 5px;
+    }
+  }
+  &__read-more {
+    float: right;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      h4 {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
