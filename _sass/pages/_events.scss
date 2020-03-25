@@ -1,6 +1,4 @@
-/*
-  need to change all the measurements to responsive
-                                                    */
+
 
 .post-list {
   margin: 0 auto;
@@ -46,4 +44,9 @@
   &:hover {
     transform: scale(1.1);
   }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
 }
