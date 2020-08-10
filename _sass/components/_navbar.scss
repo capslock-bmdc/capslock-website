@@ -1,9 +1,16 @@
 .navbar {
   background-color: $red;
+  @include respond(phone) {
+    text-align: center;
+  }
   &__icon {
     height: 42px;
     padding: 8px;
-    margin-left: 16px;
+    margin: 8px 16px;
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 }
 
@@ -18,6 +25,10 @@
   overflow: hidden;
   float: right;
 
+  @include respond(phone) {
+    float: none;
+  }
+
   &__item {
     float: right;
 
@@ -28,6 +39,10 @@
       margin: 16px 24px;
       text-decoration: none;
       font-family: $brand-font-family, sans-serif;
+
+      @include respond(phone) {
+        margin: 16px;
+      }
 
       &.active {
         border-bottom: 3px solid;
