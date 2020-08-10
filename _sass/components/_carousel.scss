@@ -1,11 +1,9 @@
 #slideshow {
-  width: 100%;
-  height: calc(100vh - 80px);
+  @include slidshow-size();
 }
 
 .slideshow__image {
-  height: calc(100vh - 80px);
-  width: 100%;
+  @include slidshow-size();
   position: absolute;
   background-size: cover;
   background-position: center;
@@ -17,4 +15,12 @@
 .slideshow__image .slideshow__header {
   color: white;
   text-shadow: black 0px 0px 10px;
+}
+
+@mixin slidshow-size() {
+  width: 100%;
+  height: calc(100vh - 56px);
+  @include respond(phone) {
+    height: calc(60vh - 56px);
+  }
 }
