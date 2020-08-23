@@ -9,9 +9,17 @@
     img {
       border-radius: 5px;
     }
+
+    @include respond(phone) {
+      display: none;
+    }
   }
   &__text {
     width: 60%;
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
   
   div {
