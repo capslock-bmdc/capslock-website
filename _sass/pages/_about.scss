@@ -1,0 +1,11 @@
+.about {
+  padding: 60px 30%;
+
+  @include respond(phone) {
+    padding: 20px 24px;
+  }
+
+  &__header {
+    padding-top: 20px;
+  }
+}
