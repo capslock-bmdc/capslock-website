@@ -181,12 +181,7 @@
  * Page content
  */
 .page-content {
-  padding: 60px;
   flex: 1;
-
-  .page-heading {
-    @include relative-font-size(2);
-  }
 }
 
 /**
