@@ -1,17 +1,38 @@
 .events {
   padding: 60px;
+
+  @include respond(tab-land) {
+    padding: 60px 10px;
+  }
 }
 
 .post-list {
   margin: 0 auto;
   list-style: none;
   display: grid;
+  justify-items: stretch;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: 400px;
   grid-column-gap: 60px;
   grid-row-gap: 60px;
-  justify-items: stretch;
-  width: 1140px;
+  width: 1000px;
+
+  @include respond(tab-land) {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 300px;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+    width: 560px;
+  }
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 300px;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    width: auto;
+    max-width: 300px;
+  }
 }
 
 .post-card {
