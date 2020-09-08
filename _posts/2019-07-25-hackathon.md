@@ -3,7 +3,7 @@ layout: post
 title:  "Hackathon June 2019"
 date:   2019-07-25 21:00:00 +0300
 description: "Hackathon June 2019"
-thumbnail: "/assets/images/thumbnails/hackathon-june-2019.jpg"
+thumbnail: "/assets/images/thumbnails/2019-07-25_hackathon.jpg"
 
 ---
 
