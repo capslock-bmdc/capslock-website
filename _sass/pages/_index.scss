@@ -1,17 +1,19 @@
 .quote {
-  max-width: 800px;
-  margin: 48px auto 0 auto;
-  padding: 92px;
-  position: relative;
-  font-style: italic;
-
-  &:before {
-      content: '\201C';
-      position: absolute;
-      top: 0;
-      left: 0;
-      color: $green;
-      font-size: 15rem;
-      z-index: -1;
-   }
+   padding: 24px 7rem;
+   
+   &__text {
+      max-width: 800px;
+      margin: 48px auto 0 auto;
+      position: relative;
+      font-style: italic;
+      &:before {
+         content: "\201C";
+         position: absolute;
+         top: -5rem;
+         left: -9rem;
+         color: $green;
+         font-size: 30rem;
+         z-index: -1;
+      }
+  }
 }

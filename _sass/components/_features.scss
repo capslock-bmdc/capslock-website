@@ -26,5 +26,9 @@
     padding: 48px 24px;
     float: left;
     box-sizing: border-box;
+
+    @include respond(phone) {
+      padding: 24px;
+    }
   }
 }
