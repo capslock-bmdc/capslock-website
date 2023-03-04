@@ -13,5 +13,5 @@
 ## Run
 - run `bundle exec jekyll serve --open-url --livereload --config _config_dev.yml`
 
-## Comman errors
+## Common errors
 - on run `bundle exec...` error: `Unable to load the EventMachine C extension; To use the pure-ruby reactor, require 'em/pure_ruby'`, you can remove `--livereload` or find check [this issue](https://github.com/oneclick/rubyinstaller2/issues/96#issuecomment-434619796).
